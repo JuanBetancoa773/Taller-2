@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokenea</title>
+</head>
+<body style="text-align: center; font-family: Arial;">
+    <h1>{{ p.nombre }}</h1>
+    <img src="{{ p.imagen }}" width="300" alt="{{ p.nombre }}" onerror="this.onerror=null; this.src='https://placehold.co/300x300?text={{ p.nombre|urlencode }}';">
+    <p><em>"{{ p.frase }}"</em></p>
+    <small>🧩 ID del contenedor: {{ p.container_id }}</small>
+</body>
+</html>
